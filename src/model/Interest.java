@@ -15,12 +15,7 @@ public class Interest {
 	public String getInterest(){
 		NumberFormat nFormat = NumberFormat.getInstance();
 		nFormat.setMaximumFractionDigits(3);
-		setInterest();
-		return nFormat.format(this.interest);
-	}
-	
-	public void setInterest(){	
-		this.interest = this.principalAmount * Math.pow(1+ this.rate/this.compounded, this.compounded*this.years);
+		return nFormat.format(this.principalAmount * Math.pow(1+ this.rate/this.compounded, this.compounded*this.years));
 	}
 	
 	public int getPrincipalAmount(){
