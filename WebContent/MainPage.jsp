@@ -31,8 +31,8 @@
 	</tr>
 	<tr>
 		<jsp:setProperty name="interest" property="*"/>
-		<td><b><!-- <jsp:getProperty name="interest" property="interest"/> ODER ${interest.interest} ODER -->
-		 ${interest["interest"]}</b></td>
+		<!-- <jsp:getProperty name="interest" property="interest"/> ODER ${interest.interest} ODER -->
+		<td><b>${interest["interest"]}</b></td>
 		<td><input type="submit" value="Calculate"/></td>
 	</tr>
 </table>
