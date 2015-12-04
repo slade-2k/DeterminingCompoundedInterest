@@ -7,7 +7,6 @@ public class Interest {
 	private int years;
 	private int compounded;
 	private double rate;
-	private double interest;
 	
 	public Interest(){
 	}
